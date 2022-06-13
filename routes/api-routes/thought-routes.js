@@ -2,12 +2,12 @@ const router = require('express').Router();
 
 // /api/thoughts
 router
+    .route('/')
     .get()
     .get()
     .post()
     .put()
-    .delete()
-
+    .delete();
 
 //     GET to get all thoughts
 //     GET to get a single thought by its _id
@@ -24,7 +24,7 @@ router
 // /api/thoughts/:thoughtId/reactions
 
 router
-    .route()
+    .route('/:id/reactions')
     .post()
     .delete()
 
